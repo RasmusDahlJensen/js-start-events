@@ -24,16 +24,16 @@ validateAll.addEventListener("click", evaluateAll);
 
 hideButton.addEventListener("click", function(){
     if (formHide.style.display != "none") {
-        formHide.style.display = "none"
-        hideButton.innerText = "Show form"
+        formHide.style.display = "none";
+        hideButton.innerText = "Show form";
     } else{
-        formHide.style.display = "block"
-        hideButton.innerText = "Hide form"
+        formHide.style.display = "block";
+        hideButton.innerText = "Hide form";
     }
 })
 
 bgColor.addEventListener("input", function(){
-    formContainer.style.backgroundColor = bgColor.value
+    formContainer.style.backgroundColor = bgColor.value;
 
 })
 
@@ -41,7 +41,6 @@ bgColor.addEventListener("input", function(){
 function evaluateCow() {
 
     if (cowInput.value == "ko") {
-        // user feedback
         cowInput.style.backgroundColor = "#99ff33";
 
     } else {
