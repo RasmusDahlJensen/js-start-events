@@ -10,22 +10,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="">
     <script src="js/events.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <form>
-        <label for="ko">Skriv ko:</label><br>
-        <input type="text" id="ko" name="ko"><br>
+<div id="formContainer">
+    <fieldset>
+        <form>
+            <label for="ko">Skriv ko:</label><br>
+            <input type="text" id="ko" name="ko"><br>
 
-        <label for="gris">skriv gris</label><br>
-        <input type="text" id="gris" value="bob" name="gris">
-        <button type="button" id="evaluatePig">valider</button><br>
+            <label for="gris">skriv gris</label><br>
+            <input type="text" id="gris" value="bob" name="gris">
+            <button type="button" id="evaluatePig">valider</button><br>
 
-        <label for="elg">Skriv elg:</label><br>
-        <input type="text" id="elg" name="elg"><br>
+            <label for="elg">Skriv elg:</label><br>
+            <input type="text" id="elg" name="elg"><br>
 
-        <button type="button" id="evaluateForm">valider form</button>
-    </form>
+            <button type="button" id="evaluateForm">valider form</button>
+            <div>
+                <select>
+                    <optgroup label="Dyr">
+                        <option value="fugl">Fugl</option>
+                        <option value="fisk">Fisk</option>
+                        <option value="reptil">Reptil</option>
+                        <option value="insekt">insekt</option>
+                        <option value="pattedydr">pattedyr</option>
+                    </optgroup>
+                </select>
+            </div>
+
+        </form>
+    </fieldset>
+</div>
 </body>
 
 </html>
