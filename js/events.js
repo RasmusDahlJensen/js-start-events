@@ -141,6 +141,9 @@ function evaluateAll() {
                 document.getElementById("animalFact").innerHTML = "Dolphin and whale babies do not sleep the first month of their life"
             }
             break;
-    }
 
-}
+            default:
+                console.log("Switch error - default case");
+                break;
+        }
+    }
