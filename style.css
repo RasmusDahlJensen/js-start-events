@@ -1,12 +1,14 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #ffffff;
 }
 
 #formContainer{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
     width: 100%;
 }
@@ -31,4 +33,10 @@ form button{
 
 select{
     margin: 3% 0 0 0;
+}
+
+#animalFact{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
 }

@@ -15,13 +15,15 @@
 
 <body>
 <div id="formContainer">
-    <fieldset>
+    <input type="color" name="bgColor" id="bgColor">
+    <button id="hideForm">Hide form</button>
+    <fieldset id="formHide">
         <form>
             <label for="cow">Skriv ko:</label><br>
             <input type="text" id="cow" name="cow"><br>
     
             <label for="pig">skriv gris</label><br>
-            <input type="text" id="pig" value="bob" name="pig">
+            <input type="text" id="pig" name="pig">
             <button type="button" id="evaluatePig">valider</button><br>
     
             <label for="moose">Skriv elg:</label><br>
@@ -29,19 +31,20 @@
     
             <button type="button" id="evaluateForm">valider form</button>
             <div>
-                <select>
+                <select name="dyrSelect" id="dyrSelect">
                     <optgroup label="Dyr">
                         <option value="fugl">Fugl</option>
                         <option value="fisk">Fisk</option>
                         <option value="reptil">Reptil</option>
-                        <option value="insekt">insekt</option>
-                        <option value="pattedydr">pattedyr</option>
+                        <option value="insekt">Insekt</option>
+                        <option value="pattedyr">Pattedyr</option>
                     </optgroup>
                 </select>
             </div>
-
         </form>
     </fieldset>
+    <h3>Fun animal facts!</h3>
+    <p id="animalFact"></p>
 </div>
 </body>
 
